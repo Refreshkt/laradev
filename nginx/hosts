@@ -1,10 +1,10 @@
 127.0.0.1	localhost
 
 # Definimos la ip local y e nombre de dominio guardamos y reiniciamos nginx
-## El siguiente paso es crear el proyecto en /var/www/html/lara/public con composer
 
 192.168.1.133 lara.dev
 
+## El siguiente paso es crear el proyecto en /var/www/html/lara/public con composer
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     ip6-localhost ip6-loopback
