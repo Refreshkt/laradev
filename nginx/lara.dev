@@ -1,0 +1,47 @@
+server {
+	
+	# Puerto de de escucha en el servidor		
+	
+	listen 80;
+
+	# Raiz del sitio web
+
+	root /var/www/html/lara/public;
+	
+	# Nombre de dominio que tendremos que configurar en el archivo /etc/hosts
+
+	server_name lara.dev;
+	
+	# Tipos de archivos que leerá por defecto para urls en las que no se nombre el archivo
+
+	index index.php index.html index.htm;
+	
+	# En caso de tener o crear un certificado ssl
+
+	#ssl on;
+	#ssl_certificate /etc/nginx/ssl/certificadolara.dev.crt;
+	#ssl_certificate_key /etc/nginx/ssl/lara.dev.key;
+
+	# Escritura del log de error y de acceso
+
+	error_log /var/log/nginx/lara.dev_error.log crit;
+	access_log /var/log/nginx/lara.dev_acces.log;
+	
+	# Configuración urls amigables
+
+	location / {
+		try_files $uri $uri/ /index.php?$query_string;
+		#Se agrega $args para que sea compatible con WordPress (sin rewrite)
+	}
+
+	# Incluimos el archivo básico de seguridad creado anteriormente
+	
+	include general/sec.conf;
+
+	# Configuración de PHP-FPM
+
+	include general/php.conf;
+}
+
+## creamos un enlace simbolico de este archivo en /etc/nginx/sites-enabled desde la terminal sudo ln -s /etc/nginx/sites-available/lara.dev /etc/nginx/sites-enabled/lara.dev
+## Configuramos el archivo /etc/hosts con la ip local y el nombre del dominio y reiniciamos nginx continuamos comentando en /etc/host
