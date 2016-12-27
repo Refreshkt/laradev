@@ -45,7 +45,8 @@ APP_LOG_LEVEL=debug	-> Aquí definimos que queremos que los errores se escriban 
 APP_URL=http://localhost	-> Aquí definimos la url de la aplicación.
 
 En el caso de que la APP_KEY no se haya generado en la instalación tenemos la opción de utilizar el comando artisan para generarla.
-Nos situamos en /var/www/html/lara y ejecutamos el siguiente comando
+Nos situamos en /var/www/html/lara y ejecutamos el siguiente comando.
+
 php artisan key:generate "esto genera la clave y actualiza el archivo .env"
 
 Estas variables globales se utilizan en el archivo https://github.com/Refreshkt/laradev/blob/master/lara/config/app.php, donde he traducido con el traductor de google los comentarios del mismo
