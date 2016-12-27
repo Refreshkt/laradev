@@ -34,11 +34,15 @@ https://github.com/Refreshkt/laradev/blob/master/lara/.env
 
 si accedemos al archivo .env veremos una serie de variables globales, que iremos modificando según la necesidad. Prestaremos atención a las primeras variables:
 
-APP_ENV=local	-> Aquí definimos con local que estamos en desarrollo, algo que cambiaremos cuando pasemos a producción
-APP_KEY=base64:azUb6BxrbCvXGzeHO1UI9p+RrmvgNBJ1AYd6HfEmDBs=	-> Aquí tendremos la clave creada en la instalación, si no hay clave tendremos que crearla con artisan
-APP_DEBUG=true	-> Aqui definimos si queremos tener visibles los errores para poder tratarlos, utilizamos true cuando estamos en desarrollo
-APP_LOG_LEVEL=debug	-> Aquí definimos que queremos que los errores se escriban en el log
-APP_URL=http://localhost	-> Aquí definimos la url de la aplicación
+APP_ENV=local	-> Aquí definimos con local que estamos en desarrollo, algo que cambiaremos cuando pasemos a producción.
+
+APP_KEY=base64:azUb6BxrbCvXGzeHO1UI9p+RrmvgNBJ1AYd6HfEmDBs=	-> Aquí tendremos la clave creada en la instalación, si no hay clave tendremos que crearla con artisan.
+
+APP_DEBUG=true	-> Aqui definimos si queremos tener visibles los errores para poder tratarlos, utilizamos true cuando estamos en desarrollo.
+
+APP_LOG_LEVEL=debug	-> Aquí definimos que queremos que los errores se escriban en el log.
+
+APP_URL=http://localhost	-> Aquí definimos la url de la aplicación.
 
 En el caso de que la APP_KEY no se haya generado en la instalación tenemos la opción de utilizar el comando artisan para generarla.
 Nos situamos en /var/www/html/lara y ejecutamos el siguiente comando
