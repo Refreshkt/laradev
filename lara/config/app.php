@@ -7,9 +7,9 @@ return [
     | Application Name
     |--------------------------------------------------------------------------
     |
-    | This value is the name of your application. This value is used when the
-    | framework needs to place the application's name in a notification or
-    | any other location as required by the application or its packages.
+    | Este valor es el nombre de su aplicación. Este valor se utiliza cuando
+    | Debe colocar el nombre de la aplicación en una notificación o
+    | Cualquier otro lugar como sea requerido por la aplicación o sus paquetes.
     */
 
     'name' => 'Laravel',
@@ -19,9 +19,9 @@ return [
     | Application Environment
     |--------------------------------------------------------------------------
     |
-    | This value determines the "environment" your application is currently
-    | running in. This may determine how you prefer to configure various
-    | services your application utilizes. Set this in your ".env" file.
+    | Este valor determina el "entorno" en el que se encuentra su aplicación
+    | Esto puede determinar cómo prefiere configurar varios
+    | Servicios que utiliza su aplicación. Establezca esto en su archivo ".env".
     |
     */
 
@@ -32,9 +32,9 @@ return [
     | Application Debug Mode
     |--------------------------------------------------------------------------
     |
-    | When your application is in debug mode, detailed error messages with
-    | stack traces will be shown on every error that occurs within your
-    | application. If disabled, a simple generic error page is shown.
+    | Cuando su aplicación está en modo de depuración, los mensajes de error detallados con
+    | Los rastreos de pila se mostrarán en cada error que se produzca dentro de su
+    | solicitud. Si está deshabilitado, se muestra una página de error genérico simple.
     |
     */
 
@@ -45,48 +45,48 @@ return [
     | Application URL
     |--------------------------------------------------------------------------
     |
-    | This URL is used by the console to properly generate URLs when using
-    | the Artisan command line tool. You should set this to the root of
-    | your application so that it is used when running Artisan tasks.
+    | Esta URL es utilizada por la consola para generar correctamente URLs al usar
+    | La herramienta de línea de comandos Artisan. Debe establecer esto en la raíz de
+    | Su aplicación para que se utilice al ejecutar tareas de artesano.
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://lara.dev'),
 
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the default timezone for your application, which
-    | will be used by the PHP date and date-time functions. We have gone
-    | ahead and set this to a sensible default for you out of the box.
+    | Aquí puede especificar la zona horaria predeterminada para su aplicación, que
+    | Será utilizado por las funciones de fecha y hora de PHP. Nos hemos ido
+    | Adelante y fijar esto a un defecto sensible por usted fuera de la caja.
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Madrid',
 
     /*
     |--------------------------------------------------------------------------
     | Application Locale Configuration
     |--------------------------------------------------------------------------
     |
-    | The application locale determines the default locale that will be used
-    | by the translation service provider. You are free to set this value
-    | to any of the locales which will be supported by the application.
+    | La configuración regional de la aplicación determina la configuración regional predeterminada que se utilizará
+    | Por el proveedor de servicios de traducción. Usted es libre de establecer este valor
+    | A cualquiera de los locales que serán compatibles con la aplicación.
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'es',
 
     /*
     |--------------------------------------------------------------------------
     | Application Fallback Locale
     |--------------------------------------------------------------------------
     |
-    | The fallback locale determines the locale to use when the current one
-    | is not available. You may change the value to correspond to any of
-    | the language folders that are provided through your application.
+    | La configuración regional de fallback determina la configuración regional que se utilizará cuando la ubicación actual
+    | no está disponible. Puede cambiar el valor para que corresponda a cualquiera de
+    | Las carpetas de idioma que se proporcionan a través de la aplicación.
     |
     */
 
@@ -97,9 +97,9 @@ return [
     | Encryption Key
     |--------------------------------------------------------------------------
     |
-    | This key is used by the Illuminate encrypter service and should be set
-    | to a random, 32 character string, otherwise these encrypted strings
-    | will not be safe. Please do this before deploying an application!
+    | Esta clave es utilizada por el servicio de cifrado de iluminación y debe
+    | A una cadena aleatoria de 32 caracteres, de lo contrario estas cadenas cifradas
+    | No será seguro. ¡Haga esto antes de implementar una aplicación!
     |
     */
 
@@ -112,11 +112,11 @@ return [
     | Logging Configuration
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the log settings for your application. Out of
-    | the box, Laravel uses the Monolog PHP logging library. This gives
-    | you a variety of powerful log handlers / formatters to utilize.
+    | Aquí puede configurar la configuración de registro para su aplicación. Fuera de
+    | En la caja, Laravel utiliza la biblioteca de registro Monolog PHP. Esto da
+    | Una variedad de poderosos manejadores de registro / formateadores para utilizar.
     |
-    | Available Settings: "single", "daily", "syslog", "errorlog"
+    | Configuraciones disponibles: "single", "daily", "syslog", "errorlog"
     |
     */
 
@@ -129,9 +129,9 @@ return [
     | Autoloaded Service Providers
     |--------------------------------------------------------------------------
     |
-    | The service providers listed here will be automatically loaded on the
-    | request to your application. Feel free to add your own services to
-    | this array to grant expanded functionality to your applications.
+    | Los proveedores de servicios enumerados aquí se cargarán
+    | Solicitud a su solicitud. Siéntase libre de agregar sus propios servicios a
+    | Esta matriz para otorgar funcionalidad expandida a sus aplicaciones.
     |
     */
 
@@ -185,9 +185,9 @@ return [
     | Class Aliases
     |--------------------------------------------------------------------------
     |
-    | This array of class aliases will be registered when this application
-    | is started. However, feel free to register as many as you wish as
-    | the aliases are "lazy" loaded so they don't hinder performance.
+    | Esta serie de alias de clase se registrará cuando esta aplicación
+    | Está empezado. Sin embargo, siéntase libre de registrar tantos como desee
+    | Los alias son "perezoso" cargado por lo que no obstaculizan el rendimiento.
     |
     */
 
