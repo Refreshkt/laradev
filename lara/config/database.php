@@ -7,9 +7,9 @@ return [
     | PDO Fetch Style
     |--------------------------------------------------------------------------
     |
-    | By default, database results will be returned as instances of the PHP
-    | stdClass object; however, you may desire to retrieve records in an
-    | array format for simplicity. Here you can tweak the fetch style.
+    | De forma predeterminada, los resultados de la base de datos se devolverán como instancias de PHP
+    | StdClass objeto; Sin embargo, es posible que desee recuperar registros en un
+    | Para la simplicidad. Aquí puede ajustar el estilo de búsqueda.
     |
     */
 
@@ -20,9 +20,9 @@ return [
     | Default Database Connection Name
     |--------------------------------------------------------------------------
     |
-    | Here you may specify which of the database connections below you wish
-    | to use as your default connection for all database work. Of course
-    | you may use many connections at once using the Database library.
+    | Aquí puede especificar cuál de las conexiones de base de datos a continuación desea
+    | Para usar como su conexión predeterminada para todo el trabajo de la base de datos. Por supuesto
+    | Puede utilizar muchas conexiones a la vez utilizando la biblioteca de bases de datos.
     |
     */
 
@@ -33,14 +33,14 @@ return [
     | Database Connections
     |--------------------------------------------------------------------------
     |
-    | Here are each of the database connections setup for your application.
-    | Of course, examples of configuring each database platform that is
-    | supported by Laravel is shown below to make development simple.
+    | Aquí están las configuraciones de las conexiones de la base de datos para su aplicación.
+    | Por supuesto, los ejemplos de configuración de cada plataforma de base de datos que es
+    | Apoyado por Laravel se muestra a continuación para hacer el desarrollo simple.
     |
     |
-    | All database work in Laravel is done through the PHP PDO facilities
-    | so make sure you have the driver for your particular database of
-    | choice installed on your machine before you begin development.
+    | Todo el trabajo de base de datos en Laravel se realiza a través de las instalaciones PDO de PHP
+    | Así que asegúrese de tener el controlador para su base de datos particular de
+    | Opción instalada en su máquina antes de comenzar el desarrollo.
     |
     */
 
@@ -86,9 +86,9 @@ return [
     | Migration Repository Table
     |--------------------------------------------------------------------------
     |
-    | This table keeps track of all the migrations that have already run for
-    | your application. Using this information, we can determine which of
-    | the migrations on disk haven't actually been run in the database.
+    | Esta tabla mantiene un registro de todas las migraciones que ya se han ejecutado para
+    | su aplicación. Usando esta información, podemos determinar cuál de
+    | Las migraciones en disco no se han ejecutado realmente en la base de datos.
     |
     */
 
@@ -99,9 +99,9 @@ return [
     | Redis Databases
     |--------------------------------------------------------------------------
     |
-    | Redis is an open source, fast, and advanced key-value store that also
-    | provides a richer set of commands than a typical key-value systems
-    | such as APC or Memcached. Laravel makes it easy to dig right in.
+    | Redis es un almacén de key-value abierto, rápido y avanzado que también
+    | Proporciona un conjunto más rico de comandos que un sistema típico de valores clave
+    | Tales como APC o Memcached. Laravel facilita la excavación.
     |
     */
 
