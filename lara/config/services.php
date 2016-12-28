@@ -7,10 +7,10 @@ return [
     | Third Party Services
     |--------------------------------------------------------------------------
     |
-    | This file is for storing the credentials for third party services such
-    | as Stripe, Mailgun, SparkPost and others. This file provides a sane
-    | default location for this type of information, allowing packages
-    | to have a conventional place to find your various credentials.
+    | Este archivo sirve para almacenar las credenciales de servicios de terceros tales como
+    | Como Stripe, Mailgun, SparkPost y otros. Este archivo proporciona una
+    | Ubicación predeterminada para este tipo de información, permitiendo que
+    | Para tener un lugar convencional para encontrar sus credenciales diferentes.
     |
     */
 
