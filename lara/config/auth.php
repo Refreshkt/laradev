@@ -7,9 +7,9 @@ return [
     | Authentication Defaults
     |--------------------------------------------------------------------------
     |
-    | This option controls the default authentication "guard" and password
-    | reset options for your application. You may change these defaults
-    | as required, but they're a perfect start for most applications.
+    | Esta opción controla la autenticación predeterminada "guard" y la contraseña
+    | Opciones de reinicio para su aplicación. Puede cambiar estos valores predeterminados
+    | Como sea necesario, pero son un comienzo perfecto para la mayoría de las aplicaciones.
     |
     */
 
@@ -23,15 +23,15 @@ return [
     | Authentication Guards
     |--------------------------------------------------------------------------
     |
-    | Next, you may define every authentication guard for your application.
-    | Of course, a great default configuration has been defined for you
-    | here which uses session storage and the Eloquent user provider.
+    | A continuación, puede definir cada protector de autenticación para su aplicación.
+    | Por supuesto, una gran configuración por defecto se ha definido para usted
+    | Aquí, que utiliza el almacenamiento de sesiones y el proveedor de usuarios Eloquent.
     |
-    | All authentication drivers have a user provider. This defines how the
-    | users are actually retrieved out of your database or other storage
-    | mechanisms used by this application to persist your user's data.
+    | Todos los controladores de autenticación tienen un proveedor de usuarios. Esto define cómo
+    | Los usuarios se recuperan realmente de su base de datos u otro almacenamiento
+    | Los mecanismos utilizados por esta aplicación para persistir los datos de su usuario.
     |
-    | Supported: "session", "token"
+    | Soportado: "session", "token"
     |
     */
 
@@ -52,15 +52,15 @@ return [
     | User Providers
     |--------------------------------------------------------------------------
     |
-    | All authentication drivers have a user provider. This defines how the
-    | users are actually retrieved out of your database or other storage
-    | mechanisms used by this application to persist your user's data.
+    | Todos los controladores de autenticación tienen un proveedor de usuarios. Esto define cómo
+    | Los usuarios se recuperan realmente de su base de datos u otro almacenamiento
+    | Los mecanismos utilizados por esta aplicación para persistir los datos de su usuario.
     |
-    | If you have multiple user tables or models you may configure multiple
-    | sources which represent each model / table. These sources may then
-    | be assigned to any extra authentication guards you have defined.
+    | Si tiene varias tablas o modelos de usuario, puede configurar varios
+    | Fuentes que representan cada modelo / tabla. Estas fuentes pueden entonces
+    | Ser asignado a los protectores de autenticación adicionales que haya definido.
     |
-    | Supported: "database", "eloquent"
+    | Soportado: "database", "eloquent"
     |
     */
 
@@ -81,13 +81,13 @@ return [
     | Resetting Passwords
     |--------------------------------------------------------------------------
     |
-    | You may specify multiple password reset configurations if you have more
-    | than one user table or model in the application and you want to have
-    | separate password reset settings based on the specific user types.
+    | Puede especificar varias configuraciones de restablecimiento de contraseña si tiene más
+    | Que una tabla o modelo de usuario en la aplicación y que desea tener
+    | Configuraciones de restablecimiento de contraseña independientes basadas en los tipos de usuario específicos.
     |
-    | The expire time is the number of minutes that the reset token should be
-    | considered valid. This security feature keeps tokens short-lived so
-    | they have less time to be guessed. You may change this as needed.
+    | El tiempo de caducidad es el número de minutos que el token de reinicio debe ser
+    | Considerado válido. Esta característica de seguridad mantiene los tokens de corta duración así que
+    | Tienen menos tiempo para ser adivinados. Puede cambiar esto según sea necesario.
     |
     */
 
