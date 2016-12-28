@@ -7,11 +7,11 @@ return [
     | Default Queue Driver
     |--------------------------------------------------------------------------
     |
-    | The Laravel queue API supports a variety of back-ends via an unified
-    | API, giving you convenient access to each back-end using the same
-    | syntax for each one. Here you may set the default queue driver.
+    | El API de cola de Laravel admite una variedad de back-ends a través de un
+    | API, lo que le da acceso conveniente a cada back-end utilizando el mismo
+    | Sintaxis para cada uno. Aquí puede establecer el controlador de cola predeterminado.
     |
-    | Supported: "sync", "database", "beanstalkd", "sqs", "redis", "null"
+    | Soportado: "sync", "database", "beanstalkd", "sqs", "redis", "null"
     |
     */
 
@@ -22,9 +22,9 @@ return [
     | Queue Connections
     |--------------------------------------------------------------------------
     |
-    | Here you may configure the connection information for each server that
-    | is used by your application. A default configuration has been added
-    | for each back-end shipped with Laravel. You are free to add more.
+    | Aquí puede configurar la información de conexión para cada servidor que
+    | Es utilizado por su aplicación. Se ha agregado una configuración predeterminada
+    | Para cada back-end enviado con Laravel. Usted es libre de agregar más.
     |
     */
 
@@ -71,9 +71,9 @@ return [
     | Failed Queue Jobs
     |--------------------------------------------------------------------------
     |
-    | These options configure the behavior of failed queue job logging so you
-    | can control which database and table are used to store the jobs that
-    | have failed. You may change them to any database / table you wish.
+    | Estas opciones configuran el comportamiento del registro de trabajo de cola
+    | Puede controlar qué base de datos y tabla se utilizan para almacenar los trabajos que
+    | ha fallado. Puede cambiarlos a cualquier base de datos / tabla que desee.
     |
     */
 
