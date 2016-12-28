@@ -49,7 +49,7 @@ Nos situamos en /var/www/html/lara y ejecutamos el siguiente comando.
 
 php artisan key:generate "esto genera la clave y actualiza el archivo .env".
 
-Estas variables globales se utilizan en el archivo https://github.com/Refreshkt/laradev/blob/master/lara/config/app.php, donde he traducido con el traductor de google los comentarios del mismo.
+Estas variables globales se utilizan en el archivo [app.php](https://github.com/Refreshkt/laradev/blob/master/lara/config/app.php "comentarios traducidos"), donde he traducido con el traductor de google los comentarios del mismo.
  
 Se traducen los comentarios de todos los archivos php de la carpeta config para una rápida compresión, todos estos archivos pueden ser configurados según las necesidades del sistema, es importante repasarlos para tomar conciencia de las posibilidades que ofrece el framework.
 
@@ -70,10 +70,10 @@ DB_PASSWORD=Contraseña de la base de datos creada.
 con esto ya podriamos ejecutar el comando para las migraciones que vienen por defecto en /database/migrations y comprobar que todo funciona correctamente, tambien podemos aprovechar la configuración por defecto que nos da laravel en /config/auth.php y los controladores en /app/Http/Auth/ para crear el sistema de autenticación con un simple comando de artisan, lo que nos creará las vistas en /resources/views/auth/ y en /resources/views/layouts/ y añadira el código para las rutas en /routes/web.php.
 
 Comando artisan para crear el sistema de autenticación, ejecutamos el comando desde la raiz del proyecto en mi caso /var/www/html/lara:
-php artisan make:auth	-> https://translate.google.es/translate?sl=en&tl=es&js=y&prev=_t&hl=es&ie=UTF-8&u=https%3A%2F%2Flaravel.com%2Fdocs%2F5.3%2Fauthentication&edit-text=&act=url aquí el apartado autenticación de la documentación de laravel traducido por google.
+php artisan make:auth	-> [aquí el apartado autenticación de la documentación de laravel traducido por google](https://translate.google.es/translate?sl=en&tl=es&js=y&prev=_t&hl=es&ie=UTF-8&u=https%3A%2F%2Flaravel.com%2Fdocs%2F5.3%2Fauthentication&edit-text=&act=url "Autenticación laravel 5.3") .
 
 Comando artisan para las migraciones:
-php artisan migrate	-> https://translate.google.es/translate?sl=en&tl=es&js=y&prev=_t&hl=es&ie=UTF-8&u=https%3A%2F%2Flaravel.com%2Fdocs%2F5.3%2Fmigrations&edit-text=&act=url aquí el apartado migraciones de la documentación de laravel traducido por google.
+php artisan migrate	-> [aquí el apartado migraciones de la documentación de laravel traducido por google](https://translate.google.es/translate?sl=en&tl=es&js=y&prev=_t&hl=es&ie=UTF-8&u=https%3A%2F%2Flaravel.com%2Fdocs%2F5.3%2Fmigrations&edit-text=&act=url "Migraciones laravel 5.3") .
 
 Si todo ha ido bien, tendremos las modificaciones y las nuevas vistas creadas, muy simples, pero creadas, también tendremos las tablas creadas por la migración, así que ya podremos utilizar esas vistas y empezar a utilizar el sistema básico.
 
