@@ -75,5 +75,5 @@ php artisan make:auth	-> https://translate.google.es/translate?sl=en&tl=es&js=y&
 Comando artisan para las migraciones:
 php artisan migrate	-> https://translate.google.es/translate?sl=en&tl=es&js=y&prev=_t&hl=es&ie=UTF-8&u=https%3A%2F%2Flaravel.com%2Fdocs%2F5.3%2Fmigrations&edit-text=&act=url aquí el apartado migraciones de la documentación de laravel traducido por google.
 
-Si todo ha ido bien, tendremos las modificaciones y las nuevas vistas creadas, muy simples, pero creadas, también tendremos las tablas creadas por la migración, así que ya podremos crear nuestro usuario para empezar a probar el sistema.
+Si todo ha ido bien, tendremos las modificaciones y las nuevas vistas creadas, muy simples, pero creadas, también tendremos las tablas creadas por la migración, así que ya podremos utilizar esas vistas y empezar a utilizar el sistema básico.
 
