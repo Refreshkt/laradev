@@ -7,11 +7,11 @@ return [
     | Mail Driver
     |--------------------------------------------------------------------------
     |
-    | Laravel supports both SMTP and PHP's "mail" function as drivers for the
-    | sending of e-mail. You may specify which one you're using throughout
-    | your application here. By default, Laravel is setup for SMTP mail.
+    | Laravel soporta la función de "mail" de SMTP y PHP como controladores
+    | Envío de correo electrónico. Puede especificar el que está utilizando en todo
+    | Su aplicación aquí. De forma predeterminada, Laravel está configurado para correo SMTP.
     |
-    | Supported: "smtp", "mail", "sendmail", "mailgun", "mandrill",
+    | Soportado: "smtp", "mail", "sendmail", "mailgun", "mandrill",
     |            "ses", "sparkpost", "log"
     |
     */
@@ -23,9 +23,9 @@ return [
     | SMTP Host Address
     |--------------------------------------------------------------------------
     |
-    | Here you may provide the host address of the SMTP server used by your
-    | applications. A default option is provided that is compatible with
-    | the Mailgun mail service which will provide reliable deliveries.
+    | Aquí puede proporcionar la dirección de host del servidor SMTP utilizado por su
+    | Aplicaciones. Se proporciona una opción predeterminada que es compatible con
+    | El servicio de correo Mailgun que proporcionará entregas confiables.
     |
     */
 
@@ -36,9 +36,9 @@ return [
     | SMTP Host Port
     |--------------------------------------------------------------------------
     |
-    | This is the SMTP port used by your application to deliver e-mails to
-    | users of the application. Like the host we have set this value to
-    | stay compatible with the Mailgun e-mail application by default.
+    | Este es el puerto SMTP utilizado por la aplicación para enviar correos electrónicos a
+    | Usuarios de la aplicación. Al igual que el host, hemos establecido este valor para
+    | Permanecen compatibles con la aplicación de correo electrónico Mailgun de forma predeterminada.
     |
     */
 
@@ -49,9 +49,9 @@ return [
     | Global "From" Address
     |--------------------------------------------------------------------------
     |
-    | You may wish for all e-mails sent by your application to be sent from
-    | the same address. Here, you may specify a name and address that is
-    | used globally for all e-mails that are sent by your application.
+    | Es posible que desee que todos los correos electrónicos enviados por su solicitud sean enviados desde
+    | La misma dirección. Aquí, puede especificar un nombre y una dirección
+    | Utilizado globalmente para todos los correos electrónicos enviados por su aplicación.
     |
     */
 
@@ -65,9 +65,9 @@ return [
     | E-Mail Encryption Protocol
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the encryption protocol that should be used when
-    | the application send e-mail messages. A sensible default using the
-    | transport layer security protocol should provide great security.
+    | Aquí puede especificar el protocolo de cifrado que se debe utilizar cuando
+    | La aplicación envía mensajes de correo electrónico. Un valor predeterminado
+    | Protocolo de seguridad de capa de transporte debe proporcionar una gran seguridad.
     |
     */
 
@@ -78,9 +78,9 @@ return [
     | SMTP Server Username
     |--------------------------------------------------------------------------
     |
-    | If your SMTP server requires a username for authentication, you should
-    | set it here. This will get used to authenticate with your server on
-    | connection. You may also set the "password" value below this one.
+    | Si su servidor SMTP requiere un nombre de usuario para la autenticación, debe
+    | Ponlo aquí. Esto se acostumbrará a autenticarse con su servidor en
+    | conexión. También puede establecer el valor de "password" debajo de este.
     |
     */
 
@@ -91,9 +91,9 @@ return [
     | SMTP Server Password
     |--------------------------------------------------------------------------
     |
-    | Here you may set the password required by your SMTP server to send out
-    | messages from your application. This will be given to the server on
-    | connection so that the application will be able to send messages.
+    | Aquí puede establecer la contraseña requerida por su servidor SMTP para enviar
+    | Mensajes de su aplicación. Esto se dará al servidor en
+    | Para que la aplicación pueda enviar mensajes.
     |
     */
 
@@ -104,9 +104,9 @@ return [
     | Sendmail System Path
     |--------------------------------------------------------------------------
     |
-    | When using the "sendmail" driver to send e-mails, we will need to know
-    | the path to where Sendmail lives on this server. A default path has
-    | been provided here, which will work well on most of your systems.
+    | Cuando se utiliza el controlador "sendmail" para enviar correos electrónicos, tendremos que saber
+     | La ruta a donde Sendmail vive en este servidor. Una ruta predeterminada tiene
+     | Aquí, que funcionará bien en la mayoría de sus sistemas.
     |
     */
 
