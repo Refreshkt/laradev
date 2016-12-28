@@ -7,11 +7,11 @@ return [
     | Default Filesystem Disk
     |--------------------------------------------------------------------------
     |
-    | Here you may specify the default filesystem disk that should be used
-    | by the framework. A "local" driver, as well as a variety of cloud
-    | based drivers are available for your choosing. Just store away!
+    | Aquí puede especificar el disco de sistema de archivos predeterminado que debe utilizarse
+    | Por el marco. Un controlador "local", así como una variedad de
+    | Basado en los conductores están disponibles para su elección. ¡Almacene!
     |
-    | Supported: "local", "ftp", "s3", "rackspace"
+    | Soportado: "local", "ftp", "s3", "rackspace"
     |
     */
 
@@ -22,9 +22,9 @@ return [
     | Default Cloud Filesystem Disk
     |--------------------------------------------------------------------------
     |
-    | Many applications store files both locally and in the cloud. For this
-    | reason, you may specify a default "cloud" driver here. This driver
-    | will be bound as the Cloud disk implementation in the container.
+    | Muchas aplicaciones almacenan archivos tanto localmente como en la nube. Para esto
+    | Razón, puede especificar un controlador de "nube" predeterminado aquí. Este conductor
+    | Se vinculará como la implementación del disco Cloud en el contenedor.
     |
     */
 
@@ -35,9 +35,9 @@ return [
     | Filesystem Disks
     |--------------------------------------------------------------------------
     |
-    | Here you may configure as many filesystem "disks" as you wish, and you
-    | may even configure multiple disks of the same driver. Defaults have
-    | been setup for each driver as an example of the required options.
+    | Aquí puede configurar tantos "discos" del sistema de archivos como desee y
+    | Incluso puede configurar varios discos del mismo controlador. Los valores predeterminados
+    | Configurado para cada controlador como un ejemplo de las opciones requeridas.
     |
     */
 
