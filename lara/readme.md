@@ -10,6 +10,8 @@ El cual crea la estructura básica para iniciar cualquier proyecto.
 
 En este momento podemos acceder a http://lara.dev y obtendremos una pantalla en blanco, sin ningún tipo de error, esto es por que todavía tenemos que hacer algunos cambios en la estructura del proyecto.
 
+## Permisos
+
 Los cambios que debo realizar son los permisos de lectura y escritura de algunos directorios y archivos de la estructura de laravel, en mi caso y teniendo en cuenta que estoy en un servidor local, los permisos los tengo de lectura y escritura para mi usuario y lo que necesito es que el usuario del servidor tenga estos permisos para algunos directorios y archivos, el usuario del servidor podemos verlo en el archivo /etc/nginx/nginx.conf, donde veremos en la primera linea el siguiente código que define el usuario, user www-data;
 
 Con esto claro y en mi caso, simplemente defino el grupo www-data para los directorios "storage" y "bootstrap/cache", desde el terminal y situandonos en /var/www/html/lara/ añadimos el grupo www-data de la siguiente forma
@@ -25,6 +27,8 @@ sudo chmod 775 -R storage
 hacemos lo mismo para bootstrap/cache y listo, si ahora refrescamos la url http://lara.dev obtendremos la página del framework
 
 Nótese que los permisos que ahora mismo tiene el servidor son solo de lectura y escritura para las dos carpetas y su contenido que hemos descrito, esto deberemos tenerlo en cuenta para cualquier otra carpeta que necesite estos permisos, por lo que cuando se programe alguna acción se deberá tener en cuenta la seguridad necesaria para evitar cualquier intento de escritura malintencionada.
+
+## Configurando el framework
 
 Podemos ahora pararnos un poco a ver la estructura del framework y localizar los directorios y archivos que más se van a utilizar.
 
@@ -49,9 +53,10 @@ Nos situamos en /var/www/html/lara y ejecutamos el siguiente comando.
 
 php artisan key:generate "esto genera la clave y actualiza el archivo .env".
 
+
 Estas variables globales se utilizan en el archivo [app.php](https://github.com/Refreshkt/laradev/blob/master/lara/config/app.php "comentarios traducidos"), donde he traducido con el traductor de google los comentarios del mismo.
  
-Se traducen los comentarios de todos los archivos php de la carpeta config para una rápida compresión, todos estos archivos pueden ser configurados según las necesidades del sistema, es importante repasarlos para tomar conciencia de las posibilidades que ofrece el framework.
+*Se traducen los comentarios de todos los archivos php de la carpeta config para una rápida compresión, todos estos archivos pueden ser configurados según las necesidades del sistema, es importante repasarlos para tomar conciencia de las posibilidades que ofrece el framework.*
 
 Lo primero que haremos después de revisar y configurar de forma básica los archivos vistos, es crear una base de datos y modificar el archivo .env con los datos de conexion a la BD.
 
@@ -72,7 +77,7 @@ con esto ya podriamos ejecutar el comando para las migraciones que vienen por de
 Comando artisan para crear el sistema de autenticación, ejecutamos el comando desde la raiz del proyecto en mi caso /var/www/html/lara:
 php artisan make:auth	-> [aquí el apartado autenticación de la documentación de laravel traducido por google](https://translate.google.es/translate?sl=en&tl=es&js=y&prev=_t&hl=es&ie=UTF-8&u=https%3A%2F%2Flaravel.com%2Fdocs%2F5.3%2Fauthentication&edit-text=&act=url "Autenticación laravel 5.3") .
 
-El comando artisan nos crea lo siqguiente  
+El comando artisan nos crea lo siguiente  
 /app/Http/Controllers/HomeController.php  
 /resources/views/auth/login.blade.php y register.blade.php  
 /resources/views/auth/passwords/email.blade.php y reset.blade.php  
@@ -86,4 +91,5 @@ php artisan migrate	-> [aquí el apartado migraciones de la documentación de la
 
 Si todo ha ido bien, tendremos las modificaciones, los controladores y las nuevas vistas creadas, muy simples, pero creadas, también tendremos las tablas creadas por la migración, así que ya podremos utilizar esas vistas y empezar a utilizar el sistema básico.
 
+Es posible que la linea Auth:routes(); escrita por el comando artisan en web.php nos desconcierte un poco al no ver directamente las rutas que está utilizando, podemos ver estas rutas con otro comando de artisan; php artisan route:list nos devolverá por terminal un listado de las rutas y sus metodos que tenemos creados hasta el momento, tambien podríamos seguir el código que ejecuta esa linea, lo que nos llevará hasta /vendor/laravel/framework/src/Illuminate/Routing/Router.php en su metodo auth(), donde podemos ver las rutas y salir por completo del desconcierto.
 
