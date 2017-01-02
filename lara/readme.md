@@ -93,4 +93,4 @@ Si todo ha ido bien, tendremos las modificaciones, los controladores y las nueva
 
 Es posible que la linea Auth:routes(); escrita por el comando artisan en web.php nos desconcierte un poco al no ver directamente las rutas que está utilizando, podemos ver estas rutas con otro comando de artisan; "php artisan route:list" nos devolverá por terminal un listado de las rutas, con sus metodos y sus controladores, que tenemos creadas hasta el momento, tambien podríamos seguir el código que ejecuta esa linea, lo que nos llevará hasta /vendor/laravel/framework/src/Illuminate/Routing/Router.php en su metodo auth(), donde podemos ver las rutas y salir por completo del desconcierto.
 
-
+[Aquí un video poniendo en práctica el tema, sin audio, mi voz es espantosa, tanto como mi ortografía,  pero yo me entiendo](https://youtu.be/HDXq1YqPIBY)
